@@ -31,7 +31,7 @@ function Form<Schema extends FormSchema>(props: FormProps<Schema>) {
       selectComponent={Select}
       renderField={({ Field, ...props }) => {
         return (
-          <Field {...props}>
+          <Field key={String(props.name)} {...props}>
             {({ Label, SmartInput, Errors }) => (
               <FormControl isInvalid={Boolean(props.errors)}>
                 <Label />
