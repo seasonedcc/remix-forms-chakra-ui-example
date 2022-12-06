@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev",
+    "start": "cross-env NODE_ENV=production netlify dev",
+    "typecheck": "tsc -b"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.4.3",
+    "@emotion/react": "^11.10.5",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.5",
+    "@netlify/functions": "^1.3.0",
+    "@remix-run/netlify": "^1.8.1",
+    "@remix-run/node": "^1.8.1",
+    "@remix-run/react": "^1.8.1",
+    "cross-env": "^7.0.3",
+    "domain-functions": "^1.4.0",
+    "framer-motion": "^6.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.40.0",
+    "remix-forms": "^1.2.1",
+    "zod": "^3.19.1"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.8.1",
+    "@remix-run/eslint-config": "^1.8.1",
+    "@remix-run/serve": "^1.8.1",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "eslint": "^8.27.0",
+    "typescript": "^4.8.4"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
