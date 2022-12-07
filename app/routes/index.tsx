@@ -7,4 +7,8 @@ const schema = z.object({
   howYouFoundOutAboutUs: z.enum(['fromAFriend', 'google']),
 })
 
+export function action() {
+  return null
+}
+
 export default () => <Form schema={schema} />
